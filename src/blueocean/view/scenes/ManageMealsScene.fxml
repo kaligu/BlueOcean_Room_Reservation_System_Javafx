@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pnladdcustomer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.92" prefHeight="742.0" prefWidth="846.0" style="-fx-background-color: rgba(47, 51, 72, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blueocean.controller.admin.ManageMealsSceneController">
+   <children>
+      <TextField fx:id="txtfldname" layoutX="109.0" layoutY="37.0" onAction="#enterActionTxtFldName" onKeyReleased="#searchonActionTxtfldName" prefHeight="26.0" prefWidth="175.0" promptText="type Name here..." />
+      <TextField fx:id="txtfldmealid" layoutX="298.0" layoutY="37.0" onAction="#enterActionTxtFldmealid" prefHeight="26.0" prefWidth="234.0" promptText="type Meal ID here..." />
+      <TextField fx:id="txtfldprice" layoutX="109.0" layoutY="85.0" onAction="#enterActionTxtFldPrice" prefHeight="31.0" prefWidth="175.0" promptText="Price here" />
+      <TextField fx:id="txtflddtails" layoutX="298.0" layoutY="85.0" onAction="#enterActionTxtFldDetails" prefHeight="26.0" prefWidth="234.0" promptText="Details here" />
+      <TextField fx:id="txtfldsize" layoutX="558.0" layoutY="85.0" onAction="#enterActionTxtFldSize" prefHeight="26.0" prefWidth="198.0" promptText="Size here" />
+      <TableView fx:id="tablemeal" layoutX="16.0" layoutY="212.0" prefHeight="512.0" prefWidth="821.0">
+         <columns>
+            <TableColumn fx:id="colname" prefWidth="132.0" text="Name" />
+            <TableColumn fx:id="colmeal" minWidth="4.0" prefWidth="123.0" text="Meal ID" />
+            <TableColumn fx:id="colprice" minWidth="4.0" prefWidth="165.0" text="Price" />
+            <TableColumn fx:id="coldetails" minWidth="4.0" prefWidth="173.0" text="Details" />
+            <TableColumn fx:id="colsize" minWidth="4.0" prefWidth="128.0" text="Size" />
+            <TableColumn fx:id="coloption" minWidth="4.0" prefWidth="103.0" text="Option" />
+         </columns>
+      </TableView>
+      <Text fill="#75ee01" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Search.." wrappingWidth="85.98307228088379" />
+      <JFXButton fx:id="btnaddmeal" buttonType="RAISED" layoutX="636.0" layoutY="11.0" onAction="#onActionAdd" prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: rgba(60, 204, 74, 1);" text="+Add Meal">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnupdatemeal" buttonType="RAISED" layoutX="636.0" layoutY="124.0" onAction="#onActionUpdate" prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: rgba(117, 151, 238, 1);" text="Update Meal">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Text fill="RED" layoutX="109.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text fill="RED" layoutX="298.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal ID" />
+      <Text fill="RED" layoutX="109.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text fill="RED" layoutX="298.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" />
+      <Text fill="RED" layoutX="558.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size" />
+   </children>
+</AnchorPane>

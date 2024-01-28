@@ -1,0 +1,86 @@
+#blue {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+#blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#blue:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#395cab, #223768),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#7ebcea, #2f4b8f);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
+}
+
+#red {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#efa9a9, #a46161),
+            linear-gradient(#d76e6e, #9a4747),
+            linear-gradient(#ee3131, #7a0808);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+#red Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#red:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#ee3131, #7a0808),
+            linear-gradient(#d76e6e, #933c3c),
+            linear-gradient(#efa9a9, #a46161);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
+}
+
+#purple {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#d5a4f3, #652b96),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#7024ab, #3f105b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+#purple Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#purple:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7024ab, #652b96),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#d5a4f3, #3f105b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+    -fx-font-weight:bold;
+}

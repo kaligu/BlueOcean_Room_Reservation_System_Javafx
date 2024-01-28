@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ankrpanmainadminwindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="1374.0" style="-fx-background-color: rgba(88, 107, 144, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blueocean.controller.AdminMainWindowController">
+   <children>
+      <Circle fill="#070321" layoutX="244.0" layoutY="8.0" radius="305.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#8087a8" layoutX="261.0" layoutY="819.0" radius="415.0" stroke="#66707c" strokeType="INSIDE" />
+      <Circle fill="#10194d" layoutX="205.0" layoutY="346.0" radius="313.0" stroke="#25178d" strokeType="INSIDE" />
+      <ImageView fitHeight="211.0" fitWidth="206.0" layoutX="8.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="10.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="198.0" style="-fx-background-color: rgba(39, 45, 75, 1);">
+         <children>
+            <Button id="purple" fx:id="btnbktolgin" layoutY="63.0" mnemonicParsing="false" onAction="#onActionckToLogin" prefHeight="47.0" prefWidth="198.0" style="-fx-font-size: 18;" stylesheets="@styles/admin.css" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="red" fx:id="btnexit" layoutY="630.0" mnemonicParsing="false" onAction="#onActionExit" prefHeight="64.0" prefWidth="198.0" stylesheets="@styles/admin.css" text="EXIT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="blue" fx:id="btncstmr" layoutX="1.0" layoutY="406.0" mnemonicParsing="false" onAction="#OnActionbtnCustomers" prefHeight="80.0" prefWidth="198.0" stylesheets="@styles/admin.css" text="View Customers">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="blue" fx:id="btnmanagemeals" layoutX="1.0" layoutY="326.0" mnemonicParsing="false" onAction="#onActionmanageMeals" prefHeight="80.0" prefWidth="198.0" stylesheets="@styles/admin.css" text="Manage Meals">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="blue" fx:id="btnrooms" layoutX="1.0" layoutY="246.0" mnemonicParsing="false" onAction="#OnActionbtnroomsmanage" prefHeight="80.0" prefWidth="198.0" stylesheets="@styles/admin.css" text="Manage Rooms">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="purple" fx:id="btnbckhome" layoutY="112.0" mnemonicParsing="false" onAction="#onActionBackHome" prefHeight="47.0" prefWidth="198.0" style="-fx-font-size: 18;" stylesheets="@styles/admin.css" text="Home">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="43.0" fitWidth="66.0" layoutX="153.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-reply-arrow-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="153.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-reply-arrow-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbltimeupdate" layoutX="5.0" layoutY="3.0" prefHeight="21.0" prefWidth="189.0" textFill="#eb85ce" />
+            <Button id="blue" fx:id="btnincomereports" layoutX="1.0" layoutY="486.0" mnemonicParsing="false" onAction="#OnActionbtnincomereports" prefHeight="80.0" prefWidth="198.0" stylesheets="@styles/admin.css" text="Income Reports">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainankrpan" layoutX="214.0" layoutY="8.0" opacity="0.36" prefHeight="742.0" prefWidth="852.0" style="-fx-background-color: BLACK;">
+         <children>
+            <ImageView fx:id="firstimg2" fitHeight="345.0" fitWidth="340.0" layoutX="455.0" layoutY="46.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Bedicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="firstimg1" fitHeight="345.0" fitWidth="347.0" layoutX="41.0" layoutY="48.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="firstimgcrtbkg" fitHeight="294.0" fitWidth="350.0" layoutX="58.0" layoutY="402.0" onMouseClicked="#onActionFirstimgcrtbkg" onMouseEntered="#onMouseEnterFirstimgcrtbkg" onMouseExited="#onMouseExitedFirstimgcrtbkg" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plus.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="firstimg3" fitHeight="69.0" fitWidth="119.0" layoutX="607.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/desktoalendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="firstimg4" fitHeight="69.0" fitWidth="169.0" layoutX="699.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notepad.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="firstimg5" fitHeight="66.0" fitWidth="69.0" layoutX="779.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/calculator.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="firstlblnotbooked" fill="#84c3a1" layoutX="557.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+            <Text fx:id="firstlblbooked" fill="#e1a3a3" layoutX="146.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+            <Text fx:id="firstimg7" fill="#cdc9c9" layoutX="390.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13;" text="s - Single Rooms , d - Double Rooms , t - Triple Rooms , q - Quad Rooms" wrappingWidth="434.9999930858612" />
+            <Text fx:id="firstimg6" fill="#cdc9c9" layoutX="607.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 10;" text="Developed by -@ Kaligu It Solutions... Horana " wrappingWidth="244.99995905160904" />
+            <Text fx:id="firstimg61" fill="#cdc9c9" layoutX="179.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 10;" text="Version - 1.0.0" wrappingWidth="275.99995905160904" />
+            <Text fx:id="firstimg8" fill="#e4e4e4" layoutX="337.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 12;" text="orange- Room is maintaining , red- Room is already booked , green- Room is not booked yet" wrappingWidth="507.99997901916504" />
+         </children></AnchorPane>
+      <HBox fx:id="vboxrooms" layoutX="1067.0" layoutY="9.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms3" layoutX="1067.0" layoutY="209.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms1" layoutX="1067.0" layoutY="109.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms4" layoutX="1067.0" layoutY="309.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms5" layoutX="1067.0" layoutY="409.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms6" layoutX="1067.0" layoutY="509.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <HBox fx:id="vboxrooms7" layoutX="1067.0" layoutY="609.0" opacity="0.75" prefHeight="100.0" prefWidth="301.0" />
+      <AnchorPane fx:id="ankrpanfirstscenes" layoutX="214.0" layoutY="8.0" opacity="0.53" prefHeight="742.0" prefWidth="846.0" style="-fx-background-color: BLACK;" visible="false">
+         <children>
+            <ImageView fitHeight="340.0" fitWidth="347.0" layoutX="424.0" layoutY="37.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Bedicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="345.0" fitWidth="347.0" layoutX="10.0" layoutY="34.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="294.0" fitWidth="350.0" layoutX="27.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="119.0" layoutX="576.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/desktoalendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="169.0" layoutX="668.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/notepad.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="66.0" fitWidth="69.0" layoutX="748.0" layoutY="614.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/calculator.png" />
+               </image>
+            </ImageView>
+            <Text fill="#84c3a1" layoutX="526.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+            <Text fill="#e1a3a3" layoutX="115.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+            <Text fill="#cdc9c9" layoutX="266.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="S - Single Rooms , D - Double Rooms , T - Triple Rooms , Q - Quad Rooms" wrappingWidth="581.9999930858612" />
+            <Text fill="#cdc9c9" layoutX="638.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 10;" text="\@ Kaligu It Solutions... Horana 076888888" wrappingWidth="197.99999526888132" />
+         </children>
+      </AnchorPane>
+      <JFXButton id="blue" fx:id="btnrefresh" buttonType="RAISED" layoutX="1067.0" layoutY="709.0" onAction="#onActionRefresh" prefHeight="43.0" prefWidth="301.0" stylesheets="@styles/admin.css" text="REFRESH..." />
+   </children>
+</AnchorPane>

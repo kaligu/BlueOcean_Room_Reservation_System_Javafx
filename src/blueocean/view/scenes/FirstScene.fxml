@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ankrpanfirstscene" prefHeight="742.0" prefWidth="846.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="347.0" layoutX="424.0" layoutY="37.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Bedicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="345.0" fitWidth="347.0" layoutX="10.0" layoutY="34.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/ed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="294.0" fitWidth="350.0" layoutX="27.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/plus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="119.0" layoutX="576.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/desktoalendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="169.0" layoutX="668.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/notepad.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="69.0" layoutX="748.0" layoutY="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/calculator.png" />
+         </image>
+      </ImageView>
+      <Text fill="#84c3a1" layoutX="526.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+      <Text fill="#e1a3a3" layoutX="115.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 100;" text="00" wrappingWidth="135.9830722808838" />
+      <Text fill="#cdc9c9" layoutX="266.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="S - Single Rooms , D - Double Rooms , T - Triple Rooms , Q - Quad Rooms" wrappingWidth="581.9999930858612" />
+      <Text fill="#cdc9c9" layoutX="638.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 10;" text="\@ Kaligu It Solutions... Horana 076888888" wrappingWidth="197.99999526888132" />
+   </children>
+</AnchorPane>

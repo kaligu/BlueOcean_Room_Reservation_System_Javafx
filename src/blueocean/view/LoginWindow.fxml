@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoginWindowContext" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="749.0" style="-fx-background-color: rgba(88, 107, 144, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blueocean.controller.LoginWindowController">
+   <children>
+      <Circle fill="#070321" layoutX="163.0" layoutY="-102.0" radius="249.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#8087a8" layoutX="104.0" layoutY="547.0" radius="225.0" stroke="#857ea8" strokeType="INSIDE" />
+      <Circle fill="#10194d" layoutX="22.0" layoutY="212.0" radius="232.0" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane layoutX="329.0" layoutY="90.0" prefHeight="418.0" prefWidth="410.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
+         <children>
+            <Button fx:id="btnlgin" cancelButton="true" defaultButton="true" layoutX="200.0" layoutY="313.0" mnemonicParsing="false" onAction="#OnActionbtnlgn" onMouseEntered="#mouseEnteredToLogin" onMouseExited="#mouseExitedToLogin" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: rgba(88, 107, 144, 1); -fx-font-size: 25;" text="LOGIN">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fx:id="btnclse" fitHeight="53.0" fitWidth="52.0" layoutX="354.0" layoutY="6.0" onMouseClicked="#mouseClickedToClose" onMouseEntered="#mouseEnteredToClose" onMouseExited="#mouseExitedToClose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-close-50.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="7.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 45;" text="LOGIN" wrappingWidth="140.99999789893627" />
+            <ComboBox fx:id="cmbrole" layoutX="201.0" layoutY="79.0" onAction="#OnActionCmbrole" prefHeight="50.0" prefWidth="197.0" promptText="Select A Role" style="-fx-background-color: rgba(128, 135, 168, 1);">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Text layoutX="81.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="USERNAME" wrappingWidth="112.98307228088379" />
+            <Text layoutX="81.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="PASSWORD" wrappingWidth="110.31635475158691" />
+            <TextField fx:id="txtfldusrnme" disable="true" layoutX="200.0" layoutY="185.0" prefHeight="26.0" prefWidth="191.0" promptText="Username here..." style="-fx-font-size: 18;" />
+            <Text fx:id="btnclr" layoutX="341.0" layoutY="405.0" onMouseClicked="#onActionClearFields" onMouseEntered="#mouseEnteredToClear" onMouseExited="#mouseExitedToClear" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Clear" underline="true" wrappingWidth="59.4466552734375">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Text>
+            <PasswordField fx:id="txtfldpswrd" disable="true" layoutX="200.0" layoutY="244.0" prefHeight="33.0" prefWidth="191.0" promptText="Password here..." style="-fx-font-size: 18;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="224.0" fitWidth="219.0" layoutX="-23.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

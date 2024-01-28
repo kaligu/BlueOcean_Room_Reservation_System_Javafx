@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pnladdcustomer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.92" prefHeight="742.0" prefWidth="846.0" style="-fx-background-color: rgba(47, 51, 72, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blueocean.controller.admin.RoomSceneController">
+   <children>
+      <TableView fx:id="tableroom" layoutX="16.0" layoutY="119.0" onMouseClicked="#onActionTable" prefHeight="605.0" prefWidth="821.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="coltypecode" prefWidth="75.0" text="TypeCode" />
+            <TableColumn fx:id="coltype" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="coldetails" prefWidth="75.0" text="Details" />
+            <TableColumn fx:id="colnote" prefWidth="75.0" text="Note" />
+            <TableColumn fx:id="colavailability" prefWidth="75.0" text="Availability" />
+            <TableColumn fx:id="colpbar" prefWidth="250.0" text="Room Releasing progress" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TableView>
+      <Text fill="WHITE" layoutX="411.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room is maintaining...">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="rdbtnmaintain" layoutX="711.0" layoutY="23.0" mnemonicParsing="false" onAction="#onActionbtnrdioroom" prefHeight="69.0" prefWidth="59.0" text="RadioButton">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </RadioButton>
+      <Text fill="#797979" layoutX="16.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Red - Room already booked  ,  Orange-room is maintaining " />
+      <Text fx:id="txt" fill="#afa8ff" layoutX="781.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.00633093714714" />
+      <Text fx:id="txt1" fill="#afa8ff" layoutX="786.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="60.00421142578125" />
+   </children>
+</AnchorPane>
