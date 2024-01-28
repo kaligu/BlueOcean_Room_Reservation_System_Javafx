@@ -16,5 +16,6 @@ With features like real-time room availability checks, customer data management,
 
 vedio - https://youtu.be/-Eela1iEcQg
 
-![Uploading Untitled video - Made with Clipchamp.gif…]()
+![Untitled video - Made with Clipchamp](https://github.com/kaligu/BlueOcean_Room_Reservation_System_Javafx/assets/101045808/37e775c0-946f-4756-9cfa-0c224d7db389)
+
 
